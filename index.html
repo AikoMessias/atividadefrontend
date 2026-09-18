@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lorem Ipsum</title>
+    <title>Meu Mundo da Música</title>
 
     <style>
         /* =========================================================
            VARIÁVEIS DA PALETA
-           Altere somente estes valores para mudar as cores do site.
            ========================================================= */
+
         :root {
-            --azul-escuro: #0b1f3a;
-            --azul: #145da0;
-            --azul-medio: #1f7acb;
-            --azul-claro: #dceeff;
-            --azul-fundo: #f4f8fc;
+            --azul-escuro: #24103f;
+            --azul: #6c3fb5;
+            --azul-medio: #9b6ee8;
+            --azul-claro: #e5d5fa;
+            --azul-fundo: #f5f0fa;
             --branco: #ffffff;
-            --texto: #1f2937;
-            --borda: #c7d9ea;
-            --sombra: rgba(11, 31, 58, 0.12);
+            --texto: #241b2f;
+            --borda: #cdb9e5;
+            --sombra: rgba(36, 16, 63, 0.12);
         }
 
         * {
@@ -198,123 +198,328 @@
 <body>
 
     <header id="inicio">
-        <h1>Lorem Ipsum</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        <h1>Meu Mundo da Música</h1>
+        <p>
+            A música faz parte da minha vida e é uma das formas que mais gosto
+            de usar para expressar sentimentos.
+        </p<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Mundo da Música</title>
+
+    <style>
+        /* =========================================================
+           VARIÁVEIS DA PALETA
+           ========================================================= */
+
+        :root {
+            --azul-escuro: #24103f;
+            --azul: #6c3fb5;
+            --azul-medio: #9b6ee8;
+            --azul-claro: #e5d5fa;
+            --azul-fundo: #f5f0fa;
+            --branco: #ffffff;
+            --texto: #241b2f;
+            --borda: #cdb9e5;
+            --sombra: rgba(36, 16, 63, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: var(--texto);
+            background: var(--azul-fundo);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--azul-escuro), var(--azul));
+            color: var(--branco);
+            text-align: center;
+            padding: 48px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: var(--branco);
+            border-bottom: 1px solid var(--borda);
+            box-shadow: 0 2px 8px var(--sombra);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 12px 20px;
+        }
+
+        nav a {
+            display: block;
+            color: var(--azul-escuro);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background: var(--azul-claro);
+            color: var(--azul);
+        }
+
+        main {
+            width: min(1100px, 92%);
+            margin: 40px auto;
+        }
+
+        section {
+            background: var(--branco);
+            padding: 32px;
+            margin-bottom: 30px;
+            border: 1px solid var(--borda);
+            border-radius: 12px;
+            box-shadow: 0 6px 18px var(--sombra);
+        }
+
+        h2 {
+            color: var(--azul-escuro);
+            margin-bottom: 18px;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: var(--azul);
+            margin: 24px 0 10px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        ul, ol {
+            margin: 12px 0 18px 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .destaque {
+            background: var(--azul-claro);
+            border-left: 5px solid var(--azul-medio);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        figure {
+            margin: 0;
+            background: var(--azul-fundo);
+            border: 1px solid var(--borda);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        figure img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+        }
+
+        figcaption {
+            padding: 12px 14px;
+            font-size: 0.9rem;
+            color: var(--azul-escuro);
+        }
+
+        footer {
+            background: var(--azul-escuro);
+            color: var(--branco);
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 4px 0;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 22px;
+            }
+
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+
+            figure img {
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="inicio">
+        <h1>Meu Mundo da Música</h1>
+        <p>
+            A música faz parte da minha vida e é uma das formas que mais gosto
+            de usar para expressar sentimentos.
+        </p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#inicio">Lorem</a></li>
-            <li><a href="#sobre">Ipsum</a></li>
-            <li><a href="#conteudo">Dolor</a></li>
-            <li><a href="#galeria">Sit Amet</a></li>
-            <li><a href="#contato">Consectetur</a></li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#conteudo">Estilos Musicais</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
 
     <main>
 
         <section id="sobre">
-            <h2>Lorem Ipsum Dolor</h2>
+            <h2>Minha relação com a música</h2>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                tincidunt, lorem quis consequat volutpat, nisl neque feugiat
-                sapien, vitae posuere lorem ipsum sed justo.
+                A música faz parte da minha vida há vários anos. Comecei a ter
+                contato com instrumentos ainda pequeno e, com o tempo, também
+                passei a me interessar pelo canto.
             </p>
 
             <p>
-                Curabitur euismod, neque vitae vestibulum tincidunt, mauris
-                libero luctus sapien, vitae tincidunt neque lorem sed erat.
-                Donec vel augue at ipsum interdum tincidunt.
+                Para mim, a música é uma forma de expressar sentimentos,
+                relaxar e também compartilhar momentos especiais com outras
+                pessoas.
             </p>
 
             <div class="destaque">
                 <p>
-                    <strong>Lorem ipsum:</strong> dolor sit amet, consectetur
-                    adipiscing elit. Praesent commodo, nisl vitae tincidunt
-                    feugiat, justo erat consequat lorem, vitae porta ipsum
-                    sapien sed arcu.
+                    <strong>Uma das coisas que mais gosto na música:</strong>
+                    poder transmitir sentimentos através da voz e dos
+                    instrumentos.
                 </p>
             </div>
         </section>
 
         <section id="conteudo">
-            <h2>Consectetur Adipiscing</h2>
+            <h2>Estilos Musicais</h2>
 
-            <h3>Lorem Ipsum</h3>
+            <h3>Sertanejo</h3>
+
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse potenti. Mauris consequat, justo vitae posuere
-                tincidunt, libero lorem commodo erat, sed interdum neque
-                lectus non lorem.
+                O sertanejo é um dos estilos que mais gosto de ouvir. Existem
+                músicas de diferentes tipos, desde as mais românticas até as
+                mais animadas.
             </p>
 
-            <h3>Dolor Sit Amet</h3>
+            <h3>Música acústica</h3>
+
             <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium. Ut enim ad minima veniam,
-                quis nostrum exercitationem ullam corporis suscipit.
+                Também gosto de músicas tocadas com instrumentos como violão
+                e voz. Esse estilo deixa a música mais simples e agradável de
+                ouvir.
             </p>
 
-            <h3>Lista Lorem</h3>
+            <h3>O que a música proporciona</h3>
+
             <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Consectetur adipiscing elit.</li>
-                <li>Integer tincidunt lorem ipsum.</li>
-                <li>Praesent commodo sapien.</li>
-                <li>Vestibulum vitae neque.</li>
+                <li>Ajuda a expressar sentimentos.</li>
+                <li>Pode melhorar o humor.</li>
+                <li>Permite conhecer diferentes culturas.</li>
+                <li>É uma forma de arte e entretenimento.</li>
+                <li>Pode aproximar as pessoas.</li>
             </ul>
 
-            <h3>Lista Numerada</h3>
+            <h3>Algumas formas de aproveitar a música</h3>
+
             <ol>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Curabitur vitae lorem ipsum.</li>
-                <li>Praesent interdum consectetur.</li>
+                <li>Ouvir músicas no dia a dia.</li>
+                <li>Aprender a tocar um instrumento.</li>
+                <li>Praticar canto.</li>
             </ol>
         </section>
 
         <section id="galeria">
-            <h2>Lorem Ipsum Imaginibus</h2>
+            <h2>Galeria de Música</h2>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum ante ipsum primis in faucibus orci luctus et
-                ultrices posuere cubilia curae.
+                A música pode estar presente em diferentes momentos, como
+                apresentações, shows e momentos de estudo ou diversão.
             </p>
 
             <div class="galeria">
 
-                <!-- Imagem publicada em página sobre o 3º CPM -->
                 <figure>
                     <img
-                        src="https://cpmlondrina.com.br/wp-content/uploads/2022/06/3cpm_lonResultado.jpg"
-                        alt="Lorem ipsum dolor sit amet"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDT7V5dwJNAi2AbIli3vDE3lYXbKubc92COIs2289B3g&s=10"
+                        alt="Imagem relacionada à música"
                     >
                     <figcaption>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </figcaption>
-                </figure>
-
-                <!-- Imagem da visita ao 3º CPM em Cornélio Procópio,
-                     publicada pela Polícia Militar do Paraná -->
-                <figure>
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYVCV9Epg8NdzqFd1xhm_6IMjM9B4JHKU1wyrzPZ186uCFatEFJqLYHWc&s=10"
-                        alt="Lorem ipsum consectetur adipiscing"
-                    >
-                    <figcaption>
-                        Lorem ipsum consectetur adipiscing elit, sed do eiusmod.
+                        Um momento relacionado à música e apresentações.
                     </figcaption>
                 </figure>
 
                 <figure>
                     <img
-                        src="https://folhadonortepr.com.br/wp-content/uploads/2022/11/PAG-CORN-GOV-COL-MILITAR02.jpg"
-                        alt="Lorem ipsum dolor"
+                        src="https://i.ytimg.com/vi/IUIxVW5n89A/maxresdefault.jpg"
+                        alt="Apresentação musical"
                     >
                     <figcaption>
-                        Lorem ipsum dolor sit amet, sed do eiusmod tempor.
+                        A música também está presente em eventos e apresentações.
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEBIVFRUXFRUVFxgXFhUYGBgYFhcWGBcXFRcYHSggGBolGxUYITIhJSorLi4uFx8zODMsNygtLisBCgoKDg0OGhAQGysmICYtLS0vMy0tLS0tLystLS0tLy0tLS0tLS0tLS0tLS0tLS0tLSstLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUBAwYCB//EAEMQAAEDAgMFBQYCCAMJAQAAAAEAAhEDIQQSMQVBUWFxBhMigZEyobHB4fBC0RQVI1JicpLxdKKyFiQzNENzgoOzB//EABkBAQADAQEAAAAAAAAAAAAAAAACAwQBBf/EACsRAAICAgIABAUEAwAAAAAAAAABAhEDIRIxBDJBUROBodHwFCJhkQVCcf/aAAwDAQACEQMRAD8A+RoiKREIiIAiwsoAiIgCIiAIiygMIsogMIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIgRAECIEAREQBEWQEAW5lDiPlzWX0MrspImYN7TKlY6pAA4t5CRYg24296LYejEjL7IEReeup4/RajTYbyvAaG+1qQDrx0BC9dyXNLmgmNY3a8NNEYSJFPCuDczW5tQSCCC3nGhF1r/R3SWw23Akx96XW7BDM1xBggTlk3gHfx/JaW1t4mb5rSYEG/zUbfRKl2aK9CD4TI6RHIrUaZGoI6rfTq6zMQOGoi620aheYc6xsZ05dOqNhKyHllYewjUR97uKsK+FbJgmxE6bydOKm4fZtN+ZrH6B9jGrc0Aeg9VxzS2SWNvRQIrXG7ONIEPBk8AI3W15j1Ve6gYmDG/lrr6LqmmRcGjUiIpEQiIgCIiAIiIDCysLKAIiIAiIgCIiAKfsbAmtVY3QTLiNQ1ozOPoPUhQF23ZbCBlOpVIyl8UWcQBDqjr8YA81Xllxi2SgrZx9as5xJOsk8LzyXtzi/dJAAAG82a0DnZe6lRrXPET4iB6q+2ZgaeHYK9ZwFQjNTpm7oiziNQT8FOUlGNlauUuiux2BFJmSQagGZ/8Jt4RxgT5kqNsvGOp5i2DvIOhGhB46qa/wDaZiTJIcZgi5684VUcI+JyO9J+CrxytNMtlGmqPNV8uJFpMxw5BbsMCATFnS3rI3e5MPgXE+IOaBqSCPK66HY2xTie8gENp0y4ADfEDySeRREY2VzjSbhXMg94X67omSP8o9VHwxY6aboAjwuFocJ1nddaK1RwOVw9glp6yZH3wWh4vBEX0NtYXVHR1y2bHUXNdG8H7jiptMRNRhN5DhvEkXjpKwc+QQ4EgwJj/Kfl9Vmm+/jpku3EPDbqLdk4pG/9YF0NdqBAm8Rw96tsHgO8pFzYnMTl0DmnceBnTqqOtiGGO8YLQCQ7xdbQum2HiWs/4TszSc19YygEX3iAY5KmapWi6Dt0cptTABrppXaTAsdY9mNx4cZ5KsXSbUxvttjwuMmYs5okQR5ei56qPyPUarRik2tmbLFKWjwiIrCsIiIAiIgCIUAQBERAERYQGURZDZXTh6pAkiBJ1tfS/wAl9RwtBtCg0Fpqlzy1pcGspsGUPL3A+N83BOggCLrley2Lw1Nv+8MaXZg5tXLdgGbwhwcCXkuEjKRlHJSdo9r6bWvp4RlRzHOkvr1C5zo0ho9gW0EHiVRkTn+1L7HVKj3sXCODsR+knu6tNjnMa1rGEkS4vaxzBmFtCQ4g2EiFns1i6AAq4iX1BUqd40MDjlLPC4+G4DosDBkzMQufxW3cQ8DM4QNBAdHIZ5IUY4qoCDmEmDGVm+9wBHkV2OOSbeiMpRnGmdF2lNF7hVwzSGlgc7LIlxzC7DZjhluBa4I1VV2fpMdiabKs92at2vdlGng7x8WaSYJjioterUPiL3c7gXt7LREniYWxrKmTMXuF9XTpwE69V2OOSR2WSLOupUaLnOpU3O/Rw8kGoWy0B0BodN7xpxU+p2WArd2xwZWbTD87HEmXQGlxvlbFyQTC46htWoG5e/DhAlppMdfeAQJtxsrDA4qux5fToUnuyOa4sJYch1DnSRB4W9Qix8YO1b9CDk5TVOkT8Z2ZHcvrEPdVa0kgOzm34iMtwLaxdwuufwOyXVH5XxTcWg+Mhgg777jI00ldh/thhzh6mGxmDxFHvGhr6jMr/ZdmBBcIBF9x+a5jbFemCHYbEvrNaPC4tLHDdBBuYHCQqbklRrgk+yPXwndy1pI3uNwCdwEmCBe62YHCEhpcTc2DbWmNeH0UWljM/hcBcamdeIAtqrDA4KrUkggACC4yAzM0kEAXJiT5aLjtLZaq9CsrYFgzuebNB0vLtGj1+Z3Lzsmq6lLwJh17cjBG8EQfevW0sK+mAHzOoaeYLSekzfkpONpsotytESb3m2VsEiNZBPmrP9a7sqXmvqiLj2ZznnUZr+WsHX6qqJ+JPqr1mIp5Q2HvcZJcY0O5o84k7lTVwbTaJBG4Te3X5FTx+xHJ7mlERWFQREQBERAEQogCFEQBYKLJQBbsNEi0mRAmBN1pW7CsBdDtL+4SpR7IT8rPLgfIGF7dRI+N9wk6+Y0Uv9HyugNJJYLHc4mD1Gq9Vnul92udkIvvmGRH7wseUKVFPxG3SGzNlYjEOJpUy4gmTYNk7pNt+iztDY+Iw5Hf03MBNnGC09HC3kvplDYFHJSounK0BoEloJ/E5wGpJkyo+O2ccNUFNo7zC1JY9jjmaDBMifZmF536x8nrR6/6FKK3s+a5AbyCMtuQ00+5Uw0c5BMkWABNhvyiI5EmwvHSw7VbFpYZ7e6fLXQ4CRnEzII5WgqtGLFhAsD0n+KBcX+W9bIy5K0YJxcZcWbBhwT7UmxgDThDRGUaXNzuG9TMPRxIIy5zxEEi+8Ea2J1vdW3ZDBuquk+wNf4jN5Gk+sL6NhqLGgWGqonmp0XQw2rOW2Jgq1VuWs4wBBY1nd5m8M7jmnpHVb8d2QwzxLaQaQBGTwxyMfNdY+s0BR6mJLhAFyInf6qiUzRCFehwGJ7FGCabpIMw4Zhryj3BWNJ5w2HqZWCkQ2RLQ5r3Agfsqhy5DBsHjlJXTYjDVCLPHTLPvlRMaKjaR7ymyoMwAF5JJj2Y36Krk26Zc4xo+W4vF1K9d1R+Z2d0335bwYsCNbcVDqsqOe4VGluYB3iBG8tzCd0yLcDwXS42jXpjvgJAloYdKOZ1midWGMsnkNNPO3MQ+pUY2qcrxSGcHKAMztQZktNjMzJOi0wkZ5xKzY1GWmQM7NDqS93ha0bjlBJ8iqfa9UGo7L7JcSDxAJDT7z6qwx20e7zNZJMw5xEAEWIYOP8AF9mmrNjL0t0kwroRd8mU5JKuKNSIitKgiIgCIiAIEQIAiIgCFEKAKRs9maoG8czR1LSB7/LjZR1M2OSK9MjXNa4AmDEk2AnWbRKlHshk8rJeMoloMiHBrRM6l0OkEax14rxjHS45JLnS1o4C4njJtHnyn3iKjnHM4TJhodJJ1AN4trwUzYGEDntLhJmSNToQOm/XgF2TM8I9H0LBVnvbhi4DOaQcRxd4ZH9Tl0naXYBq4OrTpPitGdrzMB7PFA3MBALbC0zdcvgsQ2q0Qcr6biB0doCOBkjyXW4fa72tAqN7zc6C0O63IB84Xkx4wm7Pdy/EyY4tfM+YHsqKVFxq+OvUp5sx3SNB+a5ajgnEiRE3PERF/SAvoW065LwDuaBf3rxS2cwuzWFo0n0HHT0Ctx5pK7IZMEXSRJ7IYMsZJvNvRdOaWkW371X7OoimGtGg06f3V5Spy1Vt27JVxSRx+2dplk5TETrouYd2jqA5mudA4Zo/qAhdr2g2B3jHObrB0/JfOxtJ9IltWnnaDq0ZKrQOLmRI6qzFsjkVHS7O7eNbHeEnQGSfiur2Rj6Vao2o0y0AnKTo51pvrAzD/wAl8h2oO+Ifh2Pe3eclweBLRdb9g18Qx4DA/W9jb10U5QjV9Fabuuz6r2vwQOGxDaQEmm+OsSPeAV8Ow9Ykjm3L6km/G5+HBfYsdtcU8I/M6XCm6BIkkNJ+JC+M0jERu+WilgWmRzPaPeKqlxkmSVrqG9tBYfn56+a8lYWlGZsIiIAiIgCIiAIEWEBlERAERCgCk7OH7Rtpi8cQNZ5KKug7I7PNR7nxIaIjUEncu3WyE/KyX+qy6oDENGVoiS7znruHBdds3ZraFOwuQJJBn11U7ZuzQBmItoBe330Uiq4Gx6LHmzNukX+HwatnB7UxtTDVQ5vv0c3ePveF0OzO2FOqWMLHGo4hrQALk2ElTcTsek+1RuYcCrHYew6DarO6pNbk8RIF50FzfeT5Kl8Z17m5OWOL9isxux64qE1GBtz+IEeUdFvw1KLK+25VvCqKN0kq0QhNz2yQwlWFCsRJnp1VbVOi2sxFrfNQLaLvCPnXQqHtPsnh65zPpieIkH3RK8YSvEBTsVtxtJkuN9w3nouxaIyT9Cpp7Ao4duWkLfn1WatDLSqENGbI8t65THvhaf1m6ruFzK30qrjbyXH2TUXR8NqYx5HieXEi9/ios2j781I2lhTSrVaR/BUez+lxA9wUZeoujy5dhERDgREQBERAEREAREQBERAFhZWEB6psLiA0SSQABqSbABfY+yewBh6LGuEv9p53ZjrHTTyXK/8A5p2fzu/S6g8LSW053u0c/wAtBzlfS2PvAWXNl3xRdDHas0VmbgNdVCcFOxLoCgLG2bccaRhxV32Tg964nQ+4Nn5qieOCj7C2nkq1qRMZoc3+n6e5W4nUrIeIT4aLHtBWlygYWotmPOaSoOFqR1UpFeLotKq1hptC20zKzTAJVbNCPT3HLZVuNotIIeSS4EE8J0jgFX9oe0Iw9XunSA4T5bljC9rMJYVHOJ/l+ZUlDVkObvRWYfGY7Dey1lRoG5wkgcAfgrvYvbJtWBUYGmQDbKfyTHbPwuJpOq0qzmspgvfEAgATO+2q+W4vE53ucwFjS45WyfC38ImbmIk8ZV0can0RyZXDzFj2zrNfjsS+n7JqWj+VoPvBVMiLWlSowt27CIiHAiIgCIiAIiIAhRCgCIiAKx2Bsl2KrCm2QNXu/db+Z0H0Ki4LCOqvaxsXMZjZo4lzjYABfVNj7Ip4emG0HiTGZ0hweY1InTpCryz4onjjyZeYSmylTbTpjK1jQ0AbgFsDt6ru9cdRGu+dPsLfSk2XmvvZ6MYqtGx7y4rFRsKUygAFErlcJ/8ACFWPDVcnt5zmOFVsgtN+k/Jda8Kh29QkHgfmrIOmcmrVEnYu2RWbBIzf6ui9B0PXAYfEGk7lPpzC6LD7RkgkyDvV84mTHpnbUK9lvwzhYrn8Hi5Ct8BUlU0XWb+0ex6OJp5XthwBhwFxK+V7TwFTDTQrNBaSTTqARJ3ieH8JuF9Q2xVezyE9Vyo26z9o2uCAAXCRIMaQf3t0b1bilJHXCMu2cgMZUoB9MEgvZlI4B41PAwdOaqllzy4lzjLiZJ4k6rC2RVHnzm5BERdIhERAEREAREQBERAERSMPh8wzOOVg1PyHErqVkZSUVbI6lUcA9xGYZG7y61uhUmi0/wDSaGD943cenBa6uGGrnOceZVyxGWXiPRa+rLWriKbW5WXAEAAx6qrqYx7HZqbntIM5gdTxMa+ajvYBoT6rznI5/FTk7VMpxY+G09nX7H7YB0NxByPBGWoBLSN7ag3A8RbfaF3uzcWyo1r2GWnp6WXxIgHT6qfsjbNfCmaTvCTJYbsPUbjzF15+bwie4nrYfGNakfbHulRKjFS9nu1lDEw0nu6n7jjqf4Hfi6a8l0FQ2WCUXF0z0ISUtogPZ7lV7SoZgQNY9eSsqxMqpxuIjkQoqRdxOE2hR8RC04fM32VZbbcO8JGhj1VZ+sotAMLbFya0YpqMZbZa4Pa+Qw62i6rZe02xM8FwFfHNqNgtAPFeMNjHUzYyOEqXw7K3NJn3OnjaVemA/LZsaaxu6r472zxTTXNKmIZTMGN7ufTT1U7AdrDTDswm3hAOp+QXKVqhc5z3aucXHqTJ+K7ig09kMk1VI8IiK8pCIiAIiIAiIgCIiAIiICbg8ICDUqWYPeplGiXgPeIH4GbgOJ4lHtFSoKTbU2XPON33zUysVtx40eRmzSb/AJf0X3ZFc5Q6rlKqlQqpU5HMaNTl4WXFAeKoZpR46Lcx4Nt/xXkjhdeCPv8ANQ6JqpLZsNDe30Oq6PYPbWvQhlearOZ8Y6OOo5H1C52nUmx1+9VuqMBbpcLksUciJQzzxS/Pxn1XZ+1KOJbmovni02c3+Zpv56Kux2z3uJdBDRad9/iFxGxtmPqNc+g/9oyCBOU3zWadzrAC95hdBsbt3VpwzFN71otMBtQcuDuhg8150/BvuD+R62P/ACEdLIvn6FZ2ipigN/eP9k8GixdyOg435Ll1fdtMXTq4jPRJNPI0CQRBlxIg6GSqFaMMHGKT7KM2RTm2ugiIrCoIiIAiIgCIiAIiIAiIgCIiAIiIC82XThknV3iPTd7v9S21SsU3SLcgPvpHovD3ffRelFVFI8Odym2aKhUOqVJeVFqFVyL4I0uWJWXLyqGaUjMrJMrysqFkqowtlOqRvWshETok0pIk4bFvpOz03FpiDzB1B4j8gdQr5uTG949rCys0Zy1sFtQauPEPHv6wDzUyFIwOIcySxxa4QWkag8l1LdkH5aZIaOFxwOn0Wr9Fa72TB4FXuX9LY6oxobXaA5zRAa9tg5wG50mfPjrVYjDuY8hzSxwMOa4EH75q3Uijk4PTKyrSLTBXhTsU3NrusPqobmEX3cVRKNGzHlUlvs8oiKBcEREAREQBERAEREAREQBERAXQd4Z3n4n+5Wuo8CB9wF5L/d8fuVFq1J+HkPqt7lSPJULZ7qVFoKzqjnAKt7LkqPBatZXsvnRZFJx0B+zHxKqlJF0ISNZWQplPZNdwzNpOcOIg/NRX0XNJDmkRrIKqtF/HR5RYWQpWQca2ZbqtuE9ryK8ECFnDm88lJaaISpwbJ+Exrqbu8YSHN8QgxpqPMSrraGKpYiga2YNqtqQGNbH7N292sw6bzviBZczQf4l0HZmk15fRkjvGiw3+INIE2tma/wD9Sn3szP8AaqoqKbDJIvKOZIlvmNxXqo1zHFjhDmktI4EGD8Fpa/K4jjcKeiNM0VKYIlvmOH0WlT6jZ8Tfa+KiVBvHmOBVM41s14ct6ZrREVRpCIiAIiIAiIgCIiAIiICW6pA++q0t+novBcmZaeSbMnCkbHOjTVTMFswuu+w4DX6LTgWXzFW1OqsuXK3pGzBhilbLPC4am1uUNA5jXrKpzgnEd40gtIMgG8NcJ5TIBTaGMIbA1NvJQg5zALnpNrgSqoJotyNN0X2HYS0EvymLAWB3gGPaPIxyK2frJjiPCGSHU6gGnJw3634iFRux5LYm0etwY9ZI6qM7FkmTrAHpxU0r7Iastn1mOLO9psO8mIJvBzRvsfVba2xMMKzqbnva2xDmkHKDpmBFxcA+R3qkfVlSm7TJdcaho8w0A+R+Sk/4KVBxe3eyVtXstWoguYRVZvLRDgObfyXPgrtdl7WygU3OkR4DN/5T0VD2jwrWvzssH6gaB3Lqq8eWV8ZF+Tw8ePKP9FQDCm4XEZXNPMTusbOvusTdQVkrTGRjnjui67Q4h9Sqa9SM1QnOW2BqMOV5IFpMBx/nVXWMwVuxVTMCZknLUnmWhr7cZAvyUQuUr0VqD7N4qaFYqXuP7rJwNTLmymImRBtfgeSudo0X1MOyoKLg9lnOyxIvo1tg0WuQLeScrOOPF2jnisLJKwq2qNcXaCIiiSCIiAIiIAiIgCIiAIURSXRBk3CqY1EVDNceiNi9R0K84vesour0K5epoZ7J8lrfr6IimiDMhYZqiLofSJdH2x/3Pmpm2vYHUIiol5ol8fJIpERFoRlZv3D+R3xctdL2h1HxRF0r9zuKn/IH/FN/+QUrDa1/8LiP9SIpmN9fM+dnVYCIoM9CIREUSQREQBERAEREAREQH//Z"
+                        alt="Evento musical"
+                    >
+                    <figcaption>
+                        Eventos são uma ótima maneira de compartilhar a música.
                     </figcaption>
                 </figure>
 
@@ -322,24 +527,166 @@
         </section>
 
         <section id="contato">
-            <h2>Lorem Ipsum Contactum</h2>
+            <h2>Sobre este projeto</h2>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Quisque eget augue vitae lorem tincidunt pellentesque.
+                Este site foi desenvolvido como atividade de Front End,
+                utilizando HTML e CSS.
             </p>
 
             <p>
-                Donec ullamcorper, sapien vitae interdum posuere, lorem ipsum
-                luctus neque, vitae commodo nisl justo ac erat.
+                O objetivo foi personalizar o projeto original, alterando as
+                cores, os textos e o conteúdo para um assunto de meu interesse.
             </p>
         </section>
 
     </main>
 
     <footer>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>© Lorem Ipsum — Dolor Sit Amet</p>
+        <p>Projeto de Front End - Meu Mundo da Música</p>
+        <p>© 2026</p>
+    </footer>
+
+</body>
+</html>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#conteudo">Estilos Musicais</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="sobre">
+            <h2>Minha relação com a música</h2>
+
+            <p>
+                A música faz parte da minha vida há vários anos. Comecei a ter
+                contato com instrumentos ainda pequeno e, com o tempo, também
+                passei a me interessar pelo canto.
+            </p>
+
+            <p>
+                Para mim, a música é uma forma de expressar sentimentos,
+                relaxar e também compartilhar momentos especiais com outras
+                pessoas.
+            </p>
+
+            <div class="destaque">
+                <p>
+                    <strong>Uma das coisas que mais gosto na música:</strong>
+                    poder transmitir sentimentos através da voz e dos
+                    instrumentos.
+                </p>
+            </div>
+        </section>
+
+        <section id="conteudo">
+            <h2>Estilos Musicais</h2>
+
+            <h3>Sertanejo</h3>
+
+            <p>
+                O sertanejo é um dos estilos que mais gosto de ouvir. Existem
+                músicas de diferentes tipos, desde as mais românticas até as
+                mais animadas.
+            </p>
+
+            <h3>Música acústica</h3>
+
+            <p>
+                Também gosto de músicas tocadas com instrumentos como violão
+                e voz. Esse estilo deixa a música mais simples e agradável de
+                ouvir.
+            </p>
+
+            <h3>O que a música proporciona</h3>
+
+            <ul>
+                <li>Ajuda a expressar sentimentos.</li>
+                <li>Pode melhorar o humor.</li>
+                <li>Permite conhecer diferentes culturas.</li>
+                <li>É uma forma de arte e entretenimento.</li>
+                <li>Pode aproximar as pessoas.</li>
+            </ul>
+
+            <h3>Algumas formas de aproveitar a música</h3>
+
+            <ol>
+                <li>Ouvir músicas no dia a dia.</li>
+                <li>Aprender a tocar um instrumento.</li>
+                <li>Praticar canto.</li>
+            </ol>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria de Música</h2>
+
+            <p>
+                A música pode estar presente em diferentes momentos, como
+                apresentações, shows e momentos de estudo ou diversão.
+            </p>
+
+            <div class="galeria">
+
+                <figure>
+                    <img
+                        src="https://cpmlondrina.com.br/wp-content/uploads/2022/06/3cpm_lonResultado.jpg"
+                        alt="Imagem relacionada à música"
+                    >
+                    <figcaption>
+                        Um momento relacionado à música e apresentações.
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYVCV9Epg8NdzqFd1xhm_6IMjM9B4JHKU1wyrzPZ186uCFatEFJqLYHWc&s=10"
+                        alt="Apresentação musical"
+                    >
+                    <figcaption>
+                        A música também está presente em eventos e apresentações.
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="https://folhadonortepr.com.br/wp-content/uploads/2022/11/PAG-CORN-GOV-COL-MILITAR02.jpg"
+                        alt="Evento musical"
+                    >
+                    <figcaption>
+                        Eventos são uma ótima maneira de compartilhar a música.
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Sobre este projeto</h2>
+
+            <p>
+                Este site foi desenvolvido como atividade de Front End,
+                utilizando HTML e CSS.
+            </p>
+
+            <p>
+                O objetivo foi personalizar o projeto original, alterando as
+                cores, os textos e o conteúdo para um assunto de meu interesse.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Projeto de Front End - Meu Mundo da Música</p>
+        <p>© 2026</p>
     </footer>
 
 </body>
